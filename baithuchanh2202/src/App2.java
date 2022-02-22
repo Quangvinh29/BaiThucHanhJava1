@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class App2 {
     
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         float a,b,c;
         System.out.println("Nhap he so a: ");

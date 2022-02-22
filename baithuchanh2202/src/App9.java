@@ -13,7 +13,7 @@ public class App9 {
             tmp = a % 10;
             res = res * 10 + tmp;
             a = a / 10;
-        System.out.println("in ra theo thu tu nguoc lai la: " + res);
         }
+        System.out.println("in ra theo thu tu nguoc lai la: " + res);
      }
 }
