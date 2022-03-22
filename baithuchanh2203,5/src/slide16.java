@@ -13,7 +13,7 @@ public class slide16 {
 class  Hinhtron{
     final float pi = 3.14f;
     float r;
-    float C,S;
+    float CV,DT;
 
     void NhapBanKinh(){
         System.out.println("nhap ban kinh: ");
@@ -22,19 +22,19 @@ class  Hinhtron{
     }
 
     void Chuvi(){
-        C=2*pi*r;
+        CV=2*pi*r;
     }
      
 
     void DienTich(){
-        S=pi*r*r;
+        DT=pi*r*r;
     }
     
     void inDienTich(){
-        System.out.println("dien tich hinh tron la: "+S);
+        System.out.println("dien tich hinh tron la: "+DT);
     }
 
     void inChuVi(){
-        System.out.println("chu vi hinh tron la: "+C);
+        System.out.println("chu vi hinh tron la: "+CV);
     }
 }
