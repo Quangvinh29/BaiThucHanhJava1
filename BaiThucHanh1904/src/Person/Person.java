@@ -1,12 +1,25 @@
 package Person;
 
+import java.util.Scanner;
+
 public class Person {
-    public String ten;
-
-    public static final int SINH_VIEN_ONLINE = 1;
-    public static final int SINH_VIEN_OFFLINE = 2;
-
-    public void xuatTen(){
-        System.out.println("\n" +ten);
+        public String PersonID;
+        public String PersonName;
+        Scanner sc = new Scanner(System.in);
+    
+        public Person(){}
+    
+        public void nhapPersonID(){
+            System.out.println(" nhap PersonID ");
+            Scanner sc = new Scanner(System.in);
+            PersonID = sc.nextLine();
+            sc.close();
+        }
+    
+        public void nhapPersonName() {
+           System.out.println("nhap ten:");
+            Scanner sc = new Scanner(System.in);
+            PersonName = sc.nextLine();
+            sc.close();
+        }
     }
-}

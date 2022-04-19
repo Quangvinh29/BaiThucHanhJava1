@@ -10,7 +10,7 @@ public class PartTimeEmployee extends Employee{
     }
      
     public PartTimeEmployee() {
-        if(gioLamViec>0){
+        if(gioLamViec<6){
         System.out.println("Nhan vien partime");
         }
     }

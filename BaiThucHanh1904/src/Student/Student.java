@@ -1,20 +1,28 @@
 package Student;
 
+import java.util.Scanner;
+
 import Person.Person;
-    public class Student extends Person {
-
-        public static final int SINH_VIEN_ONLINE = 1;
-        public static final int SINH_VIEN_OFFLINE = 2;
-
-        private String birthday;
-        private String gender;
-        
-            public Student( String masinhvien, String ten, String ngaysinh, String gioitinh,  String diachi){
-                this.birthday=ngaysinh;
-                this.PersonID=masinhvien;
-                this.PersonName=ten;
-                this.gender=gioitinh;
-            }
-            public Student(){}   
+public class Student extends Person{
+    public String msv,tentruong;
+    String phuongthuchoc;
+    public Student(){        
     }
-
+    public Student(String ten,String msv){
+       this.PersonName=ten;
+       this.PersonID=msv;
+    }
+    @Override
+    public String congviec(){
+        return "Hoc sinh";
+    }
+    public void nhaptruong(){
+       Scanner sc= new Scanner(System.in);
+       System.out.print("Nhap ten truong : ");
+       tentruong=sc.nextLine();
+    }
+    @Override
+    public void Xuatthongtin(){
+        System.out.print("Hoc sinh" + PersonName + "msv : " + msv +"hoc o truong:" + tentruong);
+    }
+}

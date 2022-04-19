@@ -1,25 +1,33 @@
 package Employee;
 
+import java.util.Scanner;
+
 import Person.Person;
 
 public class Employee extends Person{
-    protected String ten;
-    protected long luong;
-     
-    public Employee() {
-         
+    boolean gioiTinh;
+    String maNV;
+    int luong;
+    Scanner sc= new Scanner(System.in);
+
+    public void gioiTinh(){
+        System.out.println("Nam nhap 0, nu nhap 1");
+        gioiTinh=sc.nextBoolean();
     }
-     
-    public Employee(String ten) {
-        this.ten = PersonName;
+    
+    public void nhapMaNV(){
+        System.out.println("Nhap ma nhan vien:");
+        maNV=sc.nextLine();
     }
-     
-    protected String loaiNhanVien() {
-        return "";
+
+    public void inMaNv(){
+        System.out.println("Ma nhan vien: "+ maNV);
     }
-     
-    public void xuatThongTin() {
-        System.out.println("Nhan vien: " + PersonName);
-        System.out.println("- Loai nhan vien: " + loaiNhanVien());
+    public void nhapLuong(){
+        System.out.println("Nhap luong nhan vien:");
+        luong=sc.nextInt();
+    }
+    public int luongNV(){
+        return luong;
     }
 }
