@@ -12,19 +12,9 @@ import Person.Person;
             public Student( String masinhvien, String ten, String ngaysinh, String gioitinh,  String diachi){
                 this.birthday=ngaysinh;
                 this.PersonID=masinhvien;
-                this.Address=diachi;
                 this.PersonName=ten;
                 this.gender=gioitinh;
             }
-             public Student(){}
-        
-            
-    protected String loaiNhanVien() {
-        return "";
+            public Student(){}   
     }
-     
-    public void xuatThongTin() {
-        System.out.println("Sinhvien" +PersonName);
-        System.out.println("Loai sinh vien: " + loaiNhanVien());
-    }
-}
+
