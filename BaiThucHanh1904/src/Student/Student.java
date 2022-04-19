@@ -4,25 +4,22 @@ import java.util.Scanner;
 
 import Person.Person;
 public class Student extends Person{
-    public String msv,tentruong;
-    String phuongthuchoc;
-    public Student(){        
+    String mssv, tenLop;
+    Scanner sc= new Scanner(System.in);
+    public void nhapMSSV(){
+        System.out.println("Nhap mssv cua ban: ");
+        mssv=sc.nextLine();
     }
-    public Student(String ten,String msv){
-       this.PersonName=ten;
-       this.PersonID=msv;
+    public void inMSSV(){
+        System.out.println("mssv: " + mssv);
+        
     }
-    @Override
-    public String congviec(){
-        return "Hoc sinh";
+    public void nhapTenLop(){
+        System.out.println("Nhap ten lop cua ban: ");
+        tenLop=sc.nextLine();
     }
-    public void nhaptruong(){
-       Scanner sc= new Scanner(System.in);
-       System.out.print("Nhap ten truong : ");
-       tentruong=sc.nextLine();
-    }
-    @Override
-    public void Xuatthongtin(){
-        System.out.print("Hoc sinh" + PersonName + "msv : " + msv +"hoc o truong:" + tentruong);
+    public void inTenLop(){
+        System.out.println("lop: "+ tenLop);
+        
     }
 }
