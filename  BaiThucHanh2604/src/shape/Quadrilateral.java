@@ -44,7 +44,7 @@ public class Quadrilateral extends point {
         else if(AB==CD && BC != DA || AB !=CD && BC ==DA)
         System.out.println("Day la hinh thang");
         else
-        System.out.println("Ba canh AB, BC, CD va DA chi tao ra 1 tu giac binh thuong");
+        System.out.println("Bon canh AB, BC, CD va DA chi tao ra 1 tu giac binh thuong");
     } 
 }
 
