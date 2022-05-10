@@ -1,29 +1,20 @@
 package BaitapNhanVien;
 
 import java.util.ArrayList;
-import java.util.Scanner;
 
 public class AppArr extends NhanVien{
     public static void main(String[] args){
-    ArrayList<Integer> arrayList= new ArrayList<>();
-    Scanner sc = new Scanner(System.in);
-    int n;
+        ArrayList<NhanVien> nv = new ArrayList<>();
+        NhanVien nv1 = new NhanVien(NameID, Name, Address);
+        NhanVien nv2 = new nhanvien(NameID, Name, Address);
+        NhanVien nv3 = new nhanvien(NameID, Name, Address);
+        NhanVien nv4 = new nhanvien(NameID, Name, Address);
+        nv.add(nv1);
+        nv.add(nv2);
+        nv.add(nv3);
+        nv.remove(nv3);
+        nv.set(3, nv4);
+        showList(nv);
 
-    System.out.println("Nhap So luong nhan vien");
-    n = sc.nextInt();
-    for(int i=0; i<=n; i++){
-    System.out.println("Nhap thong tin nhan vien thu"+i);
-    arrayList.add(i);
-    }
-    }
-    public void nhapThongTin(){
-    for(int i=0; i<=n; i++){
-    super.nhapMaNV();
-    super.NhapName();
-    super.NhapAddress();
-    }
     }
 }
-
-
-
