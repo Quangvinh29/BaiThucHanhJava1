@@ -40,7 +40,7 @@ public class App54 {
     }else{
         System.out.println("Phan tu"+number+"khong ton tai trong hashset!");;
     }
-
+    // Nhap n phan tu
     System.out.println("Nhap so luong phan tu cua ban:");
     int n;
     n= sc.nextInt();
